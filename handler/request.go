@@ -52,3 +52,8 @@ func (r *UpdateRequest) Validate() error {
 	}
 	return fmt.Errorf("Error errotr")
 }
+
+type Register struct {
+	Email    string
+	Password string
+}
