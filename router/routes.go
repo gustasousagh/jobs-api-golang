@@ -16,7 +16,7 @@ func initializeRoutes(router *gin.Engine) {
 		v1.DELETE("opening", handler.DeleteOpeningHandler)
 		v1.PUT("opening", handler.UpdateOpeningHandler)
 		v1.GET("openings", handler.ListOpeningHandler)
-		v1.POST("users", handler.RegisterHandler)
+		v1.POST("register", handler.RegisterHandler)
 		v1.POST("login", handler.Login)
 		v1.GET("validate", middleware.Auth, handler.Validate)
 	}
